@@ -1,5 +1,5 @@
 pipeline {
-	agent any/kubernetes/docker/slave1
+	agent any
 	stages {
 		stage("welcome to jenkins"){
 			steps {
