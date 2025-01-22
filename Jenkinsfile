@@ -1,19 +1,15 @@
 pipeline {
   agent any 
   stages{
-    stage('working with loops') {
+    stage('working with conditions') {
       steps {
         script {
-          for (sub in ["aws","azure","devops","azure devops"]) {
-            println "I learned subjects such as ${sub}"
+          i = 20
+          if (i == 2) {
+            println "value is same"
           }
-          for (i=1;i<=5;i++) {
-            println "My i value is ${i}"
-          }
-          j = 10
-          while(j <= 20 ) {
-            println "my j value is ${j}"
-            j = j + 1
+          else {
+            println "value miss match "
           }
         }
       }
