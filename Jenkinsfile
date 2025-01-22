@@ -1,16 +1,16 @@
+def myfn(a,b){
+  sum = a + b 
+  println "sum of a and b is ${sum}"
+}
 pipeline {
   agent any 
   stages{
-    stage('working with conditions') {
+    stage('working with function') {
       steps {
         script {
-          i = 2
-          if (i == 2) {
-            println "value is same"
-          }
-          else {
-            println "value miss match "
-          }
+          myfn(100,200)
+          myfn(1000,2000)
+          myfn(500,600)
         }
       }
     }
