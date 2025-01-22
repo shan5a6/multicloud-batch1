@@ -4,7 +4,7 @@ pipeline {
     stage('working with conditions') {
       steps {
         script {
-          i = 20
+          i = 2
           if (i == 2) {
             println "value is same"
           }
